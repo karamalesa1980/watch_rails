@@ -45,7 +45,12 @@ group :development, :test do
   gem 'rails-controller-testing', '~> 1.0', '>= 1.0.4'
   gem 'rb-readline', '~> 0.5.5'
   gem 'rspec-json_expectations', '~> 2.2'
-  gem 'rspec-rails', '~> 3.9'
+  #gem 'rspec-rails', '~> 3.9'
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-core', '~> 3.4', '>= 3.4.4'
+  gem 'rspec-mocks', '~> 3.9', '>= 3.9.1'
+  gem "rspec-rails", "4.0.0.beta2"
+  gem 'rspec-support', '~> 3.9', '>= 3.9.2'
 end
 
 group :development do
@@ -65,7 +70,6 @@ group :test do
   gem 'launchy', '~> 2.4', '>= 2.4.3'
   gem 'rubocop', '~> 0.79.0', require: false
   gem 'shoulda-matchers', '~> 4.1', '>= 4.1.2'
-  gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
