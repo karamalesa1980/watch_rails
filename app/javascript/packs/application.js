@@ -7,6 +7,13 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require('jquery')
+//require('admin-lte')
+
+// import jQuery from "jquery";
+window.jQuery = $;
+window.$ = $;
+
 
 
 
@@ -16,3 +23,7 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+//import 'bootstrap-sass';
+import 'bootstrap/dist/js/bootstrap';
+import 'styles/application.scss';
+import 'packs/js/jquery.easydropdown.js';

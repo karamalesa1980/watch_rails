@@ -5,8 +5,10 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %> 
 
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+   
+
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -14,6 +16,10 @@
   </head>
 
   <body>
+    <!--top header-->
+    <%= render 'include/main/top_header' %>
+    <!--top header-->
+
     <!--start logo -->
     <div class="logo">
       <%= link_to root_path do %>
@@ -22,11 +28,19 @@
     </div>
     <!--start logo -->
 
+    <!--bottom-header-->
+    <%= render 'include/main/bottom_header' %>
+    <!--bottom-header-->
+
 
     <div class='content'>
       <%= yield %>
     </div>
 
-      
+    <!--footer-->
+    <%= render 'include/main/footer' %>
+    <!--footer-->
+
+  
   </body>
 </html>
