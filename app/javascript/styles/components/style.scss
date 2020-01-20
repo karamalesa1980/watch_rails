@@ -736,7 +736,8 @@ a.mask {
     font-family: 'BreeSerif-Regular';
 }
 .infor-left ul li a span {
-    background: "../images/s-icons.png" no-repeat;
+    background-image: url('./images/s-icons.png');
+    background-repeat: no-repeat;
     width: 34px;
     height: 34px;
     display: inline-block;
@@ -782,6 +783,10 @@ a.mask {
     margin: 0 0 0 10px;
     display: inline-block;
     vertical-align: middle;
+}
+.infor-left ul li a span h6{
+    padding-left: 35px;
+    padding-top: 10px;
 }
 .infor-left ul li a h6:hover{
 	color:#73B6E1;
@@ -2200,12 +2205,12 @@ figure.effect-bubba p {
     height: 30px;
     background-size: 300%;
 }
-.infor-left ul li a span.twit {
-    background-position: -30px 0px;
-}
-.infor-left ul li a span.google {
-    background-position: -60px 0px;
-}
+// .infor-left ul li a span.twit {
+//     background-position: -30px 0px;
+// }
+// .infor-left ul li a span.google {
+//     background-position: -60px 0px;
+// }
 .infor-left h3 {
     font-size: 1.34em;
 }
