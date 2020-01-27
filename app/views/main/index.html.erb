@@ -19,6 +19,28 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
+<div class="clearfix"></div>
+
+<% if @brands.nil? %>
+  <h2>no brands</h2>
+<% else %>
+  <!--About-Starts-->
+  <div class="about">
+    <div class="container">
+      <div class="about-top grid-1">
+        <% @brands.each do |i| %>
+          <div class="col-md-4 about-left">
+            <figure class="effect-bubba"> 
+              <%= image_pack_tag 'media/styles/images/'+i.img %>
+            </figure>
+          </div>
+        <% end %>
+        <div class="clearfix"></div>
+      </div> 
+    </div>
+  </div>
+  <!--About-Ends-->
+<% end %>
 
 
 

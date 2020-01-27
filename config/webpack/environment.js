@@ -16,9 +16,20 @@ environment.loaders.append('jquery', {
   }, {
     loader: 'expose-loader',
     options: 'jQuery',
-  }]
+  }, {
+    test: /\.(png|jpe?g|gif)$/i,
+    loader: 'file-loader',
+    options: {
+      name: '[path][name].[ext]',
+    }}]
 });
+
+
+
 module.exports = environment
+
+  
+
 
 // config/webpack/environment.js
 // const { environment } = require('@rails/webpacker')
