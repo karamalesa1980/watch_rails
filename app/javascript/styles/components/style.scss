@@ -616,11 +616,12 @@ figure.effect-bubba:hover p,figure.effect-bubba:hover h2 {
 /*--product-starts--*/
 .product-left {
     text-align: center;
-
+    
 }
 .product-main {
     padding: 1em 0px 2.7em 0px;
-    border:1px solid #ECEAEA;
+    border: 1px solid #ECEAEA;
+    
 }
 .product {
     padding: 3em 0px 6em 0px;
@@ -639,15 +640,17 @@ figure.effect-bubba:hover p,figure.effect-bubba:hover h2 {
     font-family: 'BreeSerif-Regular';
 }
 .product-bottom h4 i {
-    background: '../images/cart-2.png' no-repeat;
+    background: url('./images/cart-3.png');
+    background-repeat: no-repeat;
     width: 20px;
     height: 15px;
     display: inline-block;
     margin-right: 4px;
     vertical-align: middle;
 }
-.product-left:hover .product-bottom h4 i{
-	background: '../images/cart-3.png' no-repeat;
+.product-left:hover .product-bottom h4 i {
+    background: url('./images/cart-3.png');
+    background-repeat: no-repeat;
 }
 .product-bottom {
     text-align: left;
@@ -728,6 +731,7 @@ a.mask {
     font-weight: 400;
     padding: 10px 25px;
 }
+
 /*--product-end--*/
 /*--information-starts--*/
 .infor-left h3 {

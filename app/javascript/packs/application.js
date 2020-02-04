@@ -20,6 +20,9 @@ require("channels")
 import 'bootstrap';
 import '../styles/application.scss';
 import './js/jquery.easydropdown.js';
+import './js/imagezoom.js';
+import './js/responsiveslides.min.js';
+import './js/memenu.js';
 
 document.addEventListener("turbolinks:load", () => {
   $('[data-toggle="tooltip"]').tooltip()

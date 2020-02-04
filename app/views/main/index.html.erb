@@ -31,7 +31,7 @@
         <% @brands.each do |i| %>
           <div class="col-md-4 about-left">
             <figure class="effect-bubba"> 
-              <%= image_pack_tag 'media/styles/images/'+i.img %>
+              <%= image_pack_tag 'media/styles/images/'+i.img, class: "img-responsive"%>
             </figure>
           </div>
         <% end %>
@@ -42,5 +42,53 @@
   <!--About-Ends-->
 <% end %>
 
-
-
+<% if @hits.nil? %>
+  <h2>no hits</h2>
+<% else %>
+  <!--product-starts-->
+  <div class="product">
+    <div class="container">
+      <div class="product-top">
+        <div class="product-one">
+          <% @hits.hit.each do |hit| %>
+          <div class="product-left col-md-3">
+          
+            
+              <div class="product-main">
+              <a href="product/<%=hit.id%>" class="mask">
+                <%= image_pack_tag 'media/styles/images/'+hit.img, alt: "", class: "img-responsive zoom-img" %>
+              </a>
+              <%= %>
+              <div class="product-bottom">
+                <h3><a href="product/<%=hit.id%>"><%=hit.title%></a></h3>
+                <p>Explore Now</p>
+                <h4>
+                  <%= link_to 'cart_items', class: 'add-to-cart-link', data: { id: hit.id } do %>
+                    <i></i>
+                  <% end %>
+                  <span class="item_price">$ <%= hit.price %></span>
+                  <% if hit.old_price%>
+                    <small><del>$ <%= hit.old_price %></del></small>
+                  <% end %>
+                </h4>
+                </div>
+                <div class="srch">
+                  <span>
+                    - 50 %
+                  </span>
+                </div>
+                </div>
+            
+            
+            
+            </div>
+            <% end %>
+              
+            
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>  
+<!--product-end-->          
