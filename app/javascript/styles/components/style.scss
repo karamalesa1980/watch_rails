@@ -531,7 +531,7 @@ figure.effect-bubba figcaption::after {
 	right: 30px;
 	bottom: 30px;
 	left: 30px;
-	content: '';
+	content: 'Hi';
 	opacity: 0;
 	-webkit-transition: opacity 0.35s,-webkit-transform 0.35s;	
 	-moz-transition: opacity 0.35s, -moz-transform 0.35s;

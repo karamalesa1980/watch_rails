@@ -32,6 +32,10 @@
           <div class="col-md-4 about-left">
             <figure class="effect-bubba"> 
               <%= image_pack_tag 'media/styles/images/'+i.img, class: "img-responsive"%>
+              <figcaption>
+                <h2><%= i.title %></h2>
+                <p><%= i.description %></p>
+              </figcaption>
             </figure>
           </div>
         <% end %>
