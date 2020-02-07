@@ -531,7 +531,7 @@ figure.effect-bubba figcaption::after {
 	right: 30px;
 	bottom: 30px;
 	left: 30px;
-	content: 'Hi';
+	content: '';
 	opacity: 0;
 	-webkit-transition: opacity 0.35s,-webkit-transform 0.35s;	
 	-moz-transition: opacity 0.35s, -moz-transform 0.35s;
@@ -640,7 +640,7 @@ figure.effect-bubba:hover p,figure.effect-bubba:hover h2 {
     font-family: 'BreeSerif-Regular';
 }
 .product-bottom h4 i {
-    background: url('./images/cart-3.png');
+    background: url('./images/cart-2.png');
     background-repeat: no-repeat;
     width: 20px;
     height: 15px;
