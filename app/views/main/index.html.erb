@@ -1,14 +1,19 @@
-<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<!--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <%= image_pack_tag'media/styles/images/bnr-1.jpg' %>
     </div>
+    
+  
     <div class="carousel-item">
       <%= image_pack_tag'media/styles/images/bnr-2.jpg' %>
     </div>
+    
+    
     <div class="carousel-item">
       <%= image_pack_tag'media/styles/images/bnr-3.jpg' %>
     </div>
+    
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -17,9 +22,15 @@
   <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
-  </a>
-</div>
+  </a>>
+</div>-->
 <div class="clearfix"></div>
+<!--slick-slider main.js-->
+<div class="slick-slider">
+  <div><%= image_pack_tag'media/styles/images/bnr-1.jpg' %></div>
+  <div><%= image_pack_tag'media/styles/images/bnr-2.jpg' %></div>
+  <div><%= image_pack_tag'media/styles/images/bnr-3.jpg' %></div>
+</div>
 
 <% if @brands.nil? %>
   <h2>no brands</h2>

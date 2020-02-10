@@ -16,20 +16,23 @@ require("channels")
 //var $ = require('jquery');
 // window.jQuery = $;
 // window.$ = $;
-//import 'packs/js/jquery-1.11.0.min.js';
+//import './js/jquery-1.11.0.min.js';
 import 'bootstrap';
 import '../styles/application.scss';
 import './js/jquery.easydropdown.js';
+import './js/slick.min.js';
+import './js/main.js';
 //import './js/imagezoom.js';
-import './js/responsiveslides.min.js';
-import './js/memenu.js';
+//import './js/responsiveslides.min.js';
+//import './js/memenu.js';
 
 document.addEventListener("turbolinks:load", () => {
   $('[data-toggle="tooltip"]').tooltip()
   $('[data-toggle="popover"]').popover()
-})
+});
 
-require.context('../styles/images', true)
+
+require.context('../styles/images', true) // Подключаем папку images
 //export const image_pack_tag = (name) => images(name, true)
 // Uncomment to copy all static images under ../images to the output folder and reference
 // them with the image_pack_tag helper in views (e.g <%= image_pack_tag 'rails.png' %>)
