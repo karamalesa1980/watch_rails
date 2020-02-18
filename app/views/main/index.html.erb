@@ -1,4 +1,4 @@
-<!--<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <%= image_pack_tag'media/styles/images/bnr-1.jpg' %>
@@ -22,15 +22,16 @@
   <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
-  </a>>
-</div>-->
+  </a> 
+</div>
 <div class="clearfix"></div>
-<!--slick-slider main.js-->
+<!--slick-slider main.js
 <div class="slick-slider">
   <div><%= image_pack_tag'media/styles/images/bnr-1.jpg' %></div>
   <div><%= image_pack_tag'media/styles/images/bnr-2.jpg' %></div>
   <div><%= image_pack_tag'media/styles/images/bnr-3.jpg' %></div>
 </div>
+slick-slider main.js-end-->
 
 <% if @brands.nil? %>
   <h2>no brands</h2>
@@ -68,10 +69,13 @@
           <% @hits.hit.each do |hit| %>
             <div class="product-left col-md-3">
               <div class="product-main">
+                
                 <a href="product/<%=hit.id%>" class="mask">
+                
                   <%= image_pack_tag 'media/styles/images/'+hit.img, alt: "", class: "img-responsive zoom-img" %>
+                
                 </a>
-                <%= %>
+              
                 <div class="product-bottom">
                   <h3><a href="product/<%=hit.id%>"><%=hit.title%></a></h3>
                   <p>Explore Now</p>

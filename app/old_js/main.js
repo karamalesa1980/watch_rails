@@ -10,4 +10,7 @@ $(document).ready(function(){
     swipe: true,
     dots: true,
   });
+
+  
 });
+

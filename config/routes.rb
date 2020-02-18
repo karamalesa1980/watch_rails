@@ -3,5 +3,5 @@
 Rails.application.routes.draw do
   resources :product, only: [:show]
 
-  root 'main#index'
+  root to: 'main#index'
 end

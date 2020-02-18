@@ -9,10 +9,8 @@ gem 'breadcrumbs_on_rails', '~> 3.0', '>= 3.0.1'
 gem 'meta-tags', '~> 2.13'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
 gem 'activestorage', '~> 6.0', '>= 6.0.2.1'
-gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'coffee-rails', '~> 5.0'
 gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
-gem 'jquery-rails', '~> 4.3', '>= 4.3.5'
 gem 'oj', '~> 3.10'
 gem 'oj_mimic_json', '~> 1.0', '>= 1.0.1'
 gem 'pg', '>= 0.18', '< 2.0'
@@ -24,7 +22,7 @@ gem 'uglifier', '~> 4.2'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 4.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+gem 'turbolinks', require: false
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
 gem 'railties', '~> 6.0', '>= 6.0.2.1'
