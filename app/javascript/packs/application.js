@@ -1,4 +1,4 @@
-import 'bootstrap';
+
 import "../styles/application.scss";
 //import 'bootstrap';
 //import 'packs/js/jquery.bxslider.js';
@@ -22,10 +22,10 @@ require("jquery");
 // window.$ = $;
 //import './js/jquery-1.11.0.min.js';
 
-// document.addEventListener("turbolinks:load", () => {
-//   $('[data-toggle="tooltip"]').tooltip();
-//   $('[data-toggle="popover"]').popover();
-// });
+document.addEventListener("turbolinks:load", () => {
+  $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="popover"]').popover();
+});
 
 
 
@@ -59,6 +59,7 @@ import './memenu';
 
 import './mem';
 
+import 'bootstrap';
 
 
 
