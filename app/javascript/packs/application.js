@@ -1,5 +1,5 @@
+import 'bootstrap';
 import "../styles/application.scss";
-
 //import 'bootstrap';
 //import 'packs/js/jquery.bxslider.js';
 // This file is automatically compiled by Webpack, along with any other files
@@ -59,5 +59,6 @@ import './memenu';
 
 import './mem';
 
-import 'bootstrap';
+
+
 
