@@ -8,7 +8,7 @@ class CreateRelatedProducts < ActiveRecord::Migration[6.0]
   end
 
   
-  execute "INSERT INTO related_products
+  insert "INSERT INTO related_products
       (product_id , related_id)
       VALUES
       (1, 9),(1, 8),(1, 7),
