@@ -41,6 +41,12 @@
     <%= render 'include/main/footer' %>
     <!--footer-->
 
-  
+  <script>
+     window.jQuery = window.$ = jQuery;
+
+     $(document).ready(function() {
+         console.log( "jQuery is loaded" );
+     });
+  </script>
   </body>
 </html>

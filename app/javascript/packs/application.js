@@ -8,7 +8,7 @@
 // that code so it'll be compiled.
 require("jquery");
 require("jquery.turbolinks");
-require("jquery_ujs");
+//require("jquery_ujs").start();
 require("@rails/ujs").start();
 require("turbolinks").start();
 require("@rails/activestorage").start();
