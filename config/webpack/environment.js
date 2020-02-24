@@ -6,7 +6,7 @@ environment.plugins.prepend('Provide', new webpack.ProvidePlugin({
   jquery: 'jquery/src/jquery',
   jQuery: 'jquery/src/jquery',
   Popper: ['popper.js', 'default'], // for Bootstrap 4
-  jquery_ujs: 'jquery_ujs/src/rails'
+  //jquery_ujs: 'jquery_ujs/src/rails',
 })
 );
 
@@ -18,7 +18,6 @@ environment.loaders.append('jquery', {
     { loader: 'expose-loader', options: 'jQuery' }
   ]
 });
-
 
 
 

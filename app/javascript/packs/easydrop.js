@@ -1,9 +1,9 @@
 
 
-$(function() {
+$(document).ready(function() {
 
-    var menu_ul = $('.menu_drop > li > ul'),
-        menu_a  = $('.menu_drop > li > a');
+    menu_ul = $('.menu_drop > li > ul'),
+    menu_a  = $('.menu_drop > li > a');
 
     menu_ul.hide();
 

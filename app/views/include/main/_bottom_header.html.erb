@@ -26,10 +26,14 @@
     </div>
     <div class="col-md-3 header-right">
       <div class="search-bar">
-        <form action="/search" method="get" autocomplete="off">
-          <input type="text" class="typeahead" id="typeahead" name="query" placeholder="Search...">
-          <input type="submit" value="">
-        </form>
+        <!--<form action="/search" method="get" autocomplete="off">
+          <input  id="categories-basic" name="q" type="text" placeholder="Search..." data-behavior="autocomlete">   
+          <input type="submit" value="">         
+        </form>-->
+        <%= form_with url: search_index_path, local: true, method: :get, html: { autocomplete: "off", class: "form-inline my-2 my-lg-0" } do |form| %>
+          <%= form.text_field :q, placeholder: "Search", data: { behavior: "autocomplete"}, class: "form-control mr-sm-2"%>
+          <%= form.button "Search", class: "btn btn-outline-dark my-2 my-sm-0" %>
+        <% end %>
       </div>
     </div>
     <div class="clearfix"></div>
