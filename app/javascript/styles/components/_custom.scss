@@ -2634,9 +2634,10 @@ input[type="search"] {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+
 }
-.radio label,
-.checkbox label {
+.radio,
+.checkbox {
   min-height: 20px;
   padding-left: 20px;
   margin-bottom: 0;
@@ -2687,7 +2688,7 @@ fieldset[disabled] .checkbox-inline {
 .radio.disabled label,
 .checkbox.disabled label,
 fieldset[disabled] .radio label,
-fieldset[disabled] .checkbox label {
+fieldset[disabled] .checkbox {
   cursor: not-allowed;
 }
 .form-control-static {
@@ -2810,7 +2811,7 @@ select[multiple].form-group-lg .form-control {
 .has-success .radio-inline,
 .has-success .checkbox-inline,
 .has-success.radio label,
-.has-success.checkbox label,
+.has-success.checkbox,
 .has-success.radio-inline label,
 .has-success.checkbox-inline label {
   color: #3c763d;

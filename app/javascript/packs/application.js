@@ -8,7 +8,7 @@
 // that code so it'll be compiled.
 //require("jquery");
 //require("jquery.turbolinks");
-//require("jquery_ujs").start();
+//require("jquery_ujs");
 
 require("@rails/ujs").start();
 require("turbolinks").start();
@@ -49,8 +49,8 @@ require.context("../styles/images", true); // Подключаем папку im
 
 
 import "../styles/application";
-import 'jquery/src/jquery'
-import 'jquery.turbolinks/vendor/assets/javascripts/jquery.turbolinks.min.js'
+import 'jquery/src/jquery';
+import 'jquery.turbolinks/vendor/assets/javascripts/jquery.turbolinks.min.js';
 import './jquery.easydropdown';
 import './easydrop';
 import './jquery.flexslider';
