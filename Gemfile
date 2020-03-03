@@ -16,7 +16,7 @@ gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'mast
 gem 'oj', '~> 3.10'
 gem 'oj_mimic_json', '~> 1.0', '>= 1.0.1'
 gem 'pg', '>= 0.18', '< 2.0'
-gem 'puma', '~> 4.1'
+gem 'puma', '~> 4.3'
 gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 gem 'simple_form'
 gem 'uglifier', '~> 4.2'
