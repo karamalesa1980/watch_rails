@@ -10,6 +10,6 @@ require 'rails_helper'
 #     end
 #   end
 # end
-RSpec.describe CartItemHelper, type: :helper do
-  pending "add some examples to (or delete) #{__FILE__}"
+RSpec.describe CartItemsHelper, type: :helper do
+
 end

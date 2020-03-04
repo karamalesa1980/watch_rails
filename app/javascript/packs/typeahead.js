@@ -7,7 +7,7 @@
 var Typeahead = (function() {
   'use strict';
 
-  // constructor
+  // constructor 
   // -----------
 
   function Typeahead(o, www) {

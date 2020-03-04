@@ -1,23 +1,34 @@
-const { environment } = require('@rails/webpacker')
-const webpack = require('webpack')
+// const { environment } = require('@rails/webpacker')
+// const webpack = require('webpack')
 
-environment.plugins.prepend('Provide', new webpack.ProvidePlugin({
-  $: 'jquery/src/jquery',
-  jquery: 'jquery/src/jquery',
-  jQuery: 'jquery/src/jquery',
-  Popper: ['popper.js', 'default'], // for Bootstrap 4
-  //jquery_ujs: 'jquery_ujs/src/rails',
-})
+// environment.plugins.prepend('Provide', new webpack.ProvidePlugin({
+//   $: 'jquery/src/jquery',
+//   jQuery: 'jquery/src/jquery',
+//   Popper: ['popper.js', 'default'], // for Bootstrap 4
+//   //jquery_ujs: 'jquery_ujs/src/rails',
+// })
+// );
+const { environment } = require('@rails/webpacker')
+
+const webpack = require('webpack')
+environment.plugins.append(
+  'Provide',
+  new webpack.ProvidePlugin({
+    $: 'jquery',
+    jQuery: 'jquery',
+    Popper: ['popper.js', 'default']
+  })
 );
 
 
-environment.loaders.append('jquery', {
-  test: require.resolve('jquery'),
-  use: [
-    { loader: 'expose-loader', options: '$' },
-    { loader: 'expose-loader', options: 'jQuery' }
-  ]
-});
+
+// environment.loaders.append('jquery', {
+//   test: require.resolve('jquery'),
+//   use: [
+//     { loader: 'expose-loader', options: '$' },
+//     { loader: 'expose-loader', options: 'jQuery' }
+//   ]
+// });
 
 
 

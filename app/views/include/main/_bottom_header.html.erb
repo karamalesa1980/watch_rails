@@ -3,11 +3,11 @@
     <div class="col-md-9 header-left">
       <div class="top-nav">
         <ul class="memenu skyblue">
-          <li class="active"><%= link_to "Home", root_path %></li>
+          <li class="active"><%= link_to "Home", root_path, data: {turbolinks: false} %></li>
           <% Category.roots.each do |category| %>
             <% cache category do %>
               <li class="grid">
-              <%= link_to category.title, "/category/#{category.id}" %>
+              <%= link_to category.title, "/category/#{category.id}", data: {turbolinks: false}%>
                 <% if category.children.present? %>
                   <div class="mepanel">
                     <div class="row">

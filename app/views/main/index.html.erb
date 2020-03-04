@@ -70,17 +70,17 @@ slick-slider main.js-end-->
             <div class="product-left col-md-3">
               <div class="product-main">
                 
-                <a href="product/<%=hit.id%>" class="mask">
+                <a href="product/<%=hit.id%>" class="mask" data-turbolinks="false">
                 
                   <%= image_pack_tag 'media/styles/images/'+hit.img, alt: "", class: "img-responsive zoom-img" %>
                 
                 </a>
               
                 <div class="product-bottom">
-                  <h3><a href="product/<%=hit.id%>"><%=hit.title%></a></h3>
+                  <h3><a href="product/<%=hit.id%>" data-turbolinks="false"><%=hit.title%></a></h3>
                   <p>Explore Now</p>
                   <h4>
-                    <%= link_to 'cart_items', class: 'add-to-cart-link', data: { id: hit.id } do %>
+                    <%= link_to '/cart/cart_items', class: 'add-to-cart-link', data: { id: hit.id } do %>
                       <i></i>
                     <% end %>
                     <span class="item_price">$ <%= hit.price %></span>
@@ -103,4 +103,5 @@ slick-slider main.js-end-->
     </div>
   </div>
 <% end %>  
-<!--product-end-->          
+<!--product-end-->
+<input type="hidden" value="<%= !current_user.nil? ? 88 : 99 %>" id="cart_access" />          

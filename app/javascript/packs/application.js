@@ -1,5 +1,5 @@
-
-
+//import 'jquery/src/jquery';
+//global.jQuery = require('jquery');
 //import 'bootstrap';
 //import 'packs/js/jquery.bxslider.js';
 // This file is automatically compiled by Webpack, along with any other files
@@ -14,7 +14,8 @@ require("@rails/ujs").start();
 require("turbolinks").start();
 require("@rails/activestorage").start();
 require("channels");
-
+require("jquery")
+import 'bootstrap'
 
 //require("flexslider")
 //require('admin-lte')
@@ -49,7 +50,7 @@ require.context("../styles/images", true); // Подключаем папку im
 
 
 import "../styles/application";
-import 'jquery/src/jquery';
+//import 'jquery/src/jquery'
 import 'jquery.turbolinks/vendor/assets/javascripts/jquery.turbolinks.min.js';
 import './jquery.easydropdown';
 import './easydrop';
@@ -57,14 +58,14 @@ import './jquery.flexslider';
 import './flexs';
 import './memenu';
 import './mem';
-import 'bootstrap';
 import 'easy-autocomplete/dist/jquery.easy-autocomplete.js';
 //import 'typeahead.js/dist/typeahead.jquery';
 //import 'typeahead.js/dist/typeahead.bundle';
 //import 'typeahead.js/dist/bloodhound.min.js';
 //import 'bootstrap-3-typeahead';
-import 'bootstrap-sass';
-//import './my';
+//import 'bootstrap-sass';
+import './my';
 import './easyautocomplite';
-
+import './simpleCart';
+//import 'bootstrap';
 

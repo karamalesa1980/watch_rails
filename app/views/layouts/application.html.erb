@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <%= display_meta_tags title: @page_title, description: @page_description, keywords: @page_keywords %>
+    
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %> 
+    <%= display_meta_tags title: @page_title, description: @page_description, keywords: @page_keywords %>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
 
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %> 
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   </head>
 
@@ -45,12 +50,5 @@
     <%= render 'include/main/footer' %>
     <!--footer-->
 
-  <script>
-     window.jQuery = window.$ = jQuery;
-
-     $(document).ready(function() {
-         console.log( "jQuery is loaded" );
-     });
-  </script>
   </body>
 </html>

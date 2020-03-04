@@ -1,10 +1,10 @@
-/*!
- * Bootstrap v3.3.4 (http://getbootstrap.com)
- * Copyright 2011-2015 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+// /*!
+//  * Bootstrap v3.3.4 (http://getbootstrap.com)
+//  * Copyright 2011-2015 Twitter, Inc.
+//  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+//  */
 
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+// /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -267,12 +267,12 @@ th {
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  src: url('/assets/glyphicons-halflings-regular.eot');
-  src: url('/assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
-  url('/assets/glyphicons-halflings-regular.woff2') format('woff2'),
-  url('/assets/glyphicons-halflings-regular.woff') format('woff'),
-  url('/assets/glyphicons-halflings-regular.ttf') format('truetype'),
-  url('/assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('./fonts/glyphicons-halflings-regular.eot');
+  src: url('./fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('./fonts/glyphicons-halflings-regular.woff2') format('woff2'),
+  url('./fonts/glyphicons-halflings-regular.woff') format('woff'),
+  url('./fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('./fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -1454,7 +1454,7 @@ dd {
   .dl-horizontal dt {
     float: left;
     width: 160px;
-    overflow: hidden;
+    //overflow: hidden;
     clear: left;
     text-align: right;
     text-overflow: ellipsis;
@@ -3181,6 +3181,7 @@ fieldset[disabled] .btn-success.active {
   color: #5cb85c;
   background-color: #fff;
 }
+////////////////////////////////////////////////////////////////////////////////////////////
 .btn-info {
   color: #fff;
   background-color: #5bc0de;
@@ -3226,6 +3227,7 @@ fieldset[disabled] .btn-info.active {
   color: #5bc0de;
   background-color: #fff;
 }
+//////////////////////////////////////////////////////////////////////////////
 .btn-warning {
   color: #fff;
   background-color: #f0ad4e;
@@ -3321,6 +3323,7 @@ fieldset[disabled] .btn-danger.active {
   color: #337ab7;
   border-radius: 0;
 }
+//////////////////////////////////////////////////////////////////////
 .btn-link,
 .btn-link:active,
 .btn-link.active,
@@ -3382,8 +3385,9 @@ input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
 }
+/////////////////////////////////////////////////////////////////////
 .fade {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity .15s linear;
        -o-transition: opacity .15s linear;
           transition: opacity .15s linear;
@@ -3417,6 +3421,7 @@ tbody.collapse.in {
        -o-transition-property: height, visibility;
           transition-property: height, visibility;
 }
+/////////////////////////////////////////////////////////////////////////////////////////////////
 .caret {
   display: inline-block;
   width: 0;
@@ -5101,14 +5106,14 @@ a.thumbnail.active {
 .media:first-child {
   margin-top: 0;
 }
-.media,
-.media-body {
-  overflow: hidden;
-  zoom: 1;
-}
-.media-body {
-  width: 10000px;
-}
+// .media,
+// .media-body {
+//   overflow: hidden;
+//   zoom: 1;
+// }
+// .media-body {
+//   width: 10000px;
+// }
 .media-object {
   display: block;
 }
@@ -5649,13 +5654,13 @@ a.list-group-item-danger.active:focus {
 .panel-danger > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #ebccd1;
 }
-.embed-responsive {
-  position: relative;
-  display: block;
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-}
+// .embed-responsive {
+//   position: relative;
+//   display: block;
+//   height: 0;
+//   padding: 0;
+//   overflow: hidden;
+// }
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,
 .embed-responsive embed,
@@ -5722,6 +5727,7 @@ button.close {
   background: transparent;
   border: 0;
 }
+////////////////////////////////////////////////////////////////////////////////////////
 .modal-open {
   overflow: hidden;
 }
@@ -5798,6 +5804,9 @@ button.close {
 .modal-header .close {
   margin-top: -2px;
 }
+.modal-header h4 {
+margin-left: 5px;
+}
 .modal-title {
   margin: 0;
   line-height: 1.42857143;
@@ -5846,6 +5855,7 @@ button.close {
     width: 900px;
   }
 }
+////////////////////////////////////////////////////////////////////////////////////////
 .tooltip {
   position: absolute;
   z-index: 1070;
@@ -6071,9 +6081,9 @@ button.close {
   border-right-width: 0;
   border-left-color: #fff;
 }
-// .carousel {
-//   position: relative;
-// }
+.carousel {
+  position: relative;
+}
 .carousel-inner {
   position: relative;
   width: 100%;

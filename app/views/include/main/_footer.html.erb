@@ -68,16 +68,16 @@
   <div class="modal-dialog modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
         <h4 class="modal-title" id="myModalLabel">Корзина</h4>
+        <button type="button" class="close" data-dismiss="modal"  aria-label="close">&times;<span aria-hidden="true"></span></button>       
       </div>
       <div class="modal-body">
-
+        
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
+        <button type="button" class="btn btn-default-outline" data-dismiss="modal">Продолжить покупки</button>
         <a href="cart/index" type="button" class="btn btn-primary">Оформить заказ</a>
-        <button type="button" class="btn btn-default" onclick="clearCart()">Очистить корзину</button>
+        <button type="button" class="btn btn-danger" onclick="clearCart(); return false;">Очистить корзину</button>
       </div>
     </div>
   </div>
