@@ -20,6 +20,7 @@ gem 'puma', '~> 4.1'
 gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 gem 'simple_form'
 gem 'uglifier', '~> 4.2'
+gem 'pundit'
 # Use SCSS for stylesheets
 #gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -31,6 +32,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'railties', '~> 6.0', '>= 6.0.2.1'
 gem 'ransack' # live_search
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password

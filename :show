@@ -1,0 +1,30 @@
+=> [32m#<ActionDispatch::TestResponse:0x00005586af0763f0[0m
+ @cache_control[32m=[0m{},
+ @committed[32m=[0m[1;36mtrue[0m,
+ @cv[32m=[0m
+  [32m#<MonitorMixin::ConditionVariable:0x00005586af0760d0[0m
+   @cond[32m=[0m[32m#<Thread::ConditionVariable:0x00005586af076030[0m[32m>[0m,
+   @monitor[32m=[0m[32m#<ActionDispatch::TestResponse:0x00005586af0763f0[0m ...[32m>[0m[32m>[0m,
+ @header[32m=[0m
+  {[31m[1;31m"[0m[31mX-Frame-Options[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mSAMEORIGIN[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mX-XSS-Protection[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m1; mode=block[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mX-Content-Type-Options[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnosniff[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mX-Download-Options[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnoopen[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mX-Permitted-Cross-Domain-Policies[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mnone[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mReferrer-Policy[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mstrict-origin-when-cross-origin[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mLocation[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mhttp://test.host/[1;31m"[0m[31m[0m,
+   [31m[1;31m"[0m[31mContent-Type[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mtext/html; charset=utf-8[1;31m"[0m[31m[0m},
+ @mon_count[32m=[0m[1;34m0[0m,
+ @mon_mutex[32m=[0m[32m#<Thread::Mutex:0x00005586af0762b0[0m[32m>[0m,
+ @mon_mutex_owner_object_id[32m=[0m[1;34m47018475237880[0m,
+ @mon_owner[32m=[0m[1;36mnil[0m,
+ @request[32m=[0m
+  [32m#<ActionController::TestRequest:0x00005586af076b70[0m
+   @controller_class[32m=[0m[1;34;4mProductController[0m,
+   @custom_param_parsers[32m=[0m
+    {[33m:xml[0m=>
+      [32m#<Proc:0x00005586af076850@/home/yuriy/.rvm/gems/ruby-2.6.3/gems/actionpack-6.0.2.1/lib/action_controller/test_case.rb:61 (lambda)>[0m},
+   @env[32m=[0m
+    {[31m[1;31m"[0m[31mrack.version[1;31m"[0m[31m[0m=>[[1;34m1[0m, [1;34m3[0m],
+     [31m[1;31m"[0m[31mrack.input[1;31m"[0m[31m[0m=>[32m#<StringIO:0x00005586af076cb0[0m[32m>[0m,
+     [31m[1;31m"[0m[31mrack.errors[1;31m"[0m[31m[0m=>
