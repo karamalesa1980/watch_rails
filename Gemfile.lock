@@ -45,6 +45,11 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_model_serializers (0.10.10)
+      actionpack (>= 4.1, < 6.1)
+      activemodel (>= 4.1, < 6.1)
+      case_transform (>= 0.2)
+      jsonapi-renderer (>= 0.1.1.beta1, < 0.3)
     activejob (6.0.2.1)
       activesupport (= 6.0.2.1)
       globalid (>= 0.3.6)
@@ -82,6 +87,8 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (~> 1.5)
       xpath (~> 3.2)
+    case_transform (0.2)
+      activesupport
     childprocess (3.0.0)
     coderay (1.1.2)
     coffee-rails (5.0.0)
@@ -104,6 +111,8 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.3)
+    doorkeeper (5.3.1)
+      railties (>= 5)
     erubi (1.9.0)
     execjs (2.7.0)
     factory_bot (5.1.1)
@@ -129,6 +138,7 @@ GEM
     json_spec (1.1.5)
       multi_json (~> 1.0)
       rspec (>= 2.0, < 4.0)
+    jsonapi-renderer (0.2.2)
     jwt (2.2.1)
     launchy (2.5.0)
       addressable (~> 2.7)
@@ -335,6 +345,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_model_serializers
   activestorage (~> 6.0, >= 6.0.2.1)
   ancestry (~> 2.1)
   breadcrumbs_on_rails (~> 3.0, >= 3.0.1)
@@ -344,6 +355,7 @@ DEPENDENCIES
   database_cleaner (~> 1.7)
   db-query-matchers (~> 0.10.0)
   devise
+  doorkeeper
   factory_bot (~> 5.1, >= 5.1.1)
   faker!
   jbuilder (~> 2.7)
@@ -365,6 +377,7 @@ DEPENDENCIES
   railties (~> 6.0, >= 6.0.2.1)
   ransack
   rb-readline (~> 0.5.5)
+  responders
   rspec-core (~> 3.4, >= 3.4.4)
   rspec-json_expectations (~> 2.2)
   rspec-mocks (~> 3.9, >= 3.9.1)

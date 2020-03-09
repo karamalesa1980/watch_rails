@@ -21,6 +21,8 @@ gem 'sassc-rails', '~> 2.1', '>= 2.1.2'
 gem 'simple_form'
 gem 'uglifier', '~> 4.2'
 gem 'pundit'
+gem 'doorkeeper'
+gem 'active_model_serializers'
 # Use SCSS for stylesheets
 #gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -31,6 +33,7 @@ gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.7'
 gem 'railties', '~> 6.0', '>= 6.0.2.1'
 gem 'ransack' # live_search
+gem "responders"
 gem 'devise'
 gem 'omniauth'
 gem 'omniauth-facebook'
