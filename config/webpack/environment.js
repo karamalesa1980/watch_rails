@@ -22,13 +22,23 @@ environment.plugins.append(
 
 
 
-// environment.loaders.append('jquery', {
-//   test: require.resolve('jquery'),
-//   use: [
-//     { loader: 'expose-loader', options: '$' },
-//     { loader: 'expose-loader', options: 'jQuery' }
-//   ]
-// });
+environment.loaders.append('jquery', {
+  test: require.resolve('jquery'),
+  use: [
+    { loader: 'expose-loader', options: '$' },
+    { loader: 'expose-loader', options: 'jQuery' }
+  ]
+});
+
+// Get the actual sass-loader config
+const sassLoader = environment.loaders.get('sass')
+const sassLoaderConfig = sassLoader.use.find(function(element) {
+  return element.loader == 'sass-loader'
+})
+
+// Use Dart-implementation of Sass (default is node-sass)
+const options = sassLoaderConfig.options
+options.implementation = require('sass')
 
 
 
