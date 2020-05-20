@@ -19,7 +19,15 @@
             </select>
           </div>
           <div class="btn-group">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span>Account</span></a>
+            <a href="#" class="" data-toggle="dropdown">
+              <span>
+                <% if user_signed_in? %>
+                  Log out
+                <% else %>
+                  Log in 
+                <% end %>   
+              </span>
+            </a>
             <ul class="dropdown-menu">
               <% if user_signed_in? %>
                 <% if current_user.try(:admin?) %>
