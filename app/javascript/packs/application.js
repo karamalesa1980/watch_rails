@@ -58,7 +58,7 @@ import './jquery.flexslider';
 import './flexs';
 import './memenu';
 import './mem';
-import 'easy-autocomplete/dist/jquery.easy-autocomplete.js';
+import './jquery.easy-autocomplete.js';
 //import 'typeahead.js/dist/typeahead.jquery';
 //import 'typeahead.js/dist/typeahead.bundle';
 //import 'typeahead.js/dist/bloodhound.min.js';

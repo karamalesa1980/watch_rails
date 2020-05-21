@@ -11,19 +11,19 @@ environment.plugins.append(
 );
 
 
-// environment.loaders.prepend('sass', {
-//     test: /\.(css|scss|sass)$/,
-//     use: [{
-//         loader: 'style-loader'
-//     }, {
-//         loader: 'css-loader'
-//     }, {
-//         loader: 'sass-loader',
-//         options: {
-//             includePaths: ['node_modules'],
-//         }
-//     }]
-// })
+environment.loaders.prepend('sass', {
+    test: /\.(css|scss|sass)$/,
+    use: [{
+        loader: 'style-loader'
+    }, {
+        loader: 'css-loader'
+    }, {
+        loader: 'sass-loader',
+        options: {
+            includePaths: ['node_modules'],
+        }
+    }]
+})
 
 
 
