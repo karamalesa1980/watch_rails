@@ -49,7 +49,7 @@ require.context("../styles/images", true); // Подключаем папку im
 //import 'bootstrap-sass';
 
 
-import "../styles/application.css.scss";
+import "../styles/application";
 //import 'jquery/src/jquery'
 import 'jquery.turbolinks/vendor/assets/javascripts/jquery.turbolinks.min.js';
 import './jquery.easydropdown';
