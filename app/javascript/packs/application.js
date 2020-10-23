@@ -23,7 +23,7 @@ import 'bootstrap'
 // var $ = require('jquery');
 // window.jQuery = $;
 // window.$ = $;
-//import './js/jquery-1.11.0.min.js';
+
 
 // document.addEventListener("turbolinks:load", () => {
 //   $('[data-toggle="tooltip"]').tooltip();
@@ -51,6 +51,8 @@ require.context("../styles/images", true); // Подключаем папку im
 
 import "../styles/application";
 //import 'jquery/src/jquery'
+//import './jquery-1.11.0.min.js';
+import './my';
 import 'jquery.turbolinks/vendor/assets/javascripts/jquery.turbolinks.min.js';
 import './jquery.easydropdown';
 import './easydrop';
@@ -64,8 +66,9 @@ import './jquery.easy-autocomplete.js';
 //import 'typeahead.js/dist/bloodhound.min.js';
 //import 'bootstrap-3-typeahead';
 //import 'bootstrap-sass';
-import './my';
+
 import './easyautocomplite';
 import './simpleCart';
+
 //import 'bootstrap';
 

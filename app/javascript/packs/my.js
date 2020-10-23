@@ -5,7 +5,7 @@
             'X-CSRF-Token': $('meta[name="csrf-token"]').attr('content')
         }
     });
-//document.addEventListener("turbolinks:load", function() {
+document.addEventListener("turbolinks:load", function() {
     $('body').on('click', '.add-to-cart-link', function(e) {
         e.preventDefault();
         var product_id = $(this).data('id'),
@@ -185,4 +185,4 @@
     
     // //     });
     
-    // //   }); 
+       }); 
